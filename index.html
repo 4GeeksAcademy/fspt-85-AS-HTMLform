@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proyecto Forms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/b232dfea0e.js" crossorigin="anonymous"></script>
+</head>
+  <body>
+    <div class="card text-center mx-auto mt-3">
+        <!-- HEADER -->
+        <div class="card-header">
+          <h1 class="fw-bold fs-2 text-start">Payment form example</h1>
+        </div>
+        <div class="card-body">
+            <div class="alert alert-danger text-start" role="alert">
+                Some fields are missing
+              </div>
+              <!-- FORM START -->
+              <form class="row g-3">
+               <!-- ORIGINAL FIRST ROW -->
+                <div class="col-5 text-start">
+                  <label for="inputCard" class="form-label">Card #</label>
+                  <input type="number" class="form-control" placeholder="1234 1234 1234 1234" id="inputCard">
+                </div>
+                <div class="col-3 text-start">
+                  <label for="inputSecurityCode" class="form-label">CVC #</label>
+                  <input type="number" class="form-control" placeholder="0000" id="inputSecurityCode">
+                </div>
+                <div class="col-4 text-start">
+                    <label for="inputAmount" class="form-label">Amount</label>
+                    <input type="number" class="form-control" placeholder="Amount"  id="inputAmount">
+                  </div>
+               <!-- ORIGINAL SECOND ROW -->
+                  <div class="col-6 text-start">
+                  <label for="inputFirstName" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="inputFirstName">
+                </div>
+                <div class="col-6 text-start">
+                    <label for="inputLastName" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="inputLastName">
+                  </div>
+                <!-- ORIGINAL THIRD ROW -->
+                  <div class="col-6 text-start">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+               <!-- SELECT LIST -->
+                <div class="col-3 text-start">
+                    <label for="inputState" class="form-label">State</label>
+                    <select class="form-select" id="inputState" aria-label="Default select ">
+                        <option selected>State</option>
+                        <option value="1">California</option>
+                        <option value="2">Texas</option>
+                        <option value="3">Florida</option>
+                      </select>
+                  </div>
+                  <div class="col-3 text-start">
+                    <label for="inputPostalCode" class="form-label">Postal Code</label>
+                    <input type="number" class="form-control" id="inputPostalCode">
+                  </div>
+                    <!-- ORIGINAL LAST ROW -->
+                     <!-- RADIO INLINE LIST -->                     
+                    
+                     <div class="col-4 text-center text-bg-secondary h-25 rounded-3 p-2">                                   
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="MasterCard">
+                        <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard"></i></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Visa">
+                        <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"></i></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="DinersClub">
+                        <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-diners-club"></i></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="AmericanExpress">
+                        <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-amex"></i></label>
+                      </div>                      
+                  </div>
+                  <div class="col-2"></div>
+                  <!-- TEXTAREA -->
+                  <div class="col-6 text-start">
+                    <label for="floatingTextarea2" class="form-label text-start">Message</label>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>                      
+                      </div> 
+                      <p class="comment">Add any notes here.</p>
+                    </div>
+            </form>
+        </div>
+        <!-- BUTTONS -->
+        <div class="card-footer text-body-secondary">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
+                <button class="btn btn-primary" type="button">Send</button>
+              </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
